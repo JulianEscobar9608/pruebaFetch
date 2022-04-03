@@ -10,9 +10,8 @@ class Empleado extends Persona{
         this.#carros = [];
     }
 
-
     addCar(carro){
-	
+        
 		this.#carros.push(carro); 
 	}
 
@@ -30,19 +29,19 @@ class Empleado extends Persona{
 		console.table(carros);
 	}
 
-	/* searchCar(nombre){
+	searchCar(nombre){
 
 		let value = "No se encontro carro con la marca "+nombre;
 		for(let i = 0;i<this.#carros.length;i++){
 			if(this.#carros[i].getMarca() === nombre){
-				value = "Se encontro carro con la marca "+nombre+", propiedad de la persona "+this.;
+				value = "Se encontro carro con la marca "+nombre+", propiedad de la persona "+this.getNombre();
 				break;
 			}
 		}
 		return value;
 
 	}
- */
+ 
 	getCarros(){
 
 		let arrayCarros = [];

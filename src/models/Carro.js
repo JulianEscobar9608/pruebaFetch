@@ -11,9 +11,9 @@ class Carro{
         this.#color = color;
     }
 
-    asignarPersona(nombre,apellido,edad){
+    asignarPersona(persona){
         
-        this.#persona = new Persona(nombre,apellido,edad);
+        this.#persona = persona;
 
     }
 
